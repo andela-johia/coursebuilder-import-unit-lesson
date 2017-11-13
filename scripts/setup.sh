@@ -23,7 +23,7 @@ set -e
 shopt -s nullglob
 
 export SOURCE_DIR="$( cd "$( dirname "$0" )" && cd .. && pwd )"
-export MODULE_NAME=coursebuilder-import-unit-lesson
+export MODULE_NAME=coursebuilder-unit-lesson-copy
 export MODULE_SRC_DIR=$SOURCE_DIR/src
 export MODULE_TESTS_DIR=$SOURCE_DIR/tests
 
