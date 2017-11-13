@@ -5,5 +5,5 @@ container_version: 1.8.0-d2467e99e5a4
 description: Example of Course Builder modules
 license: Apache 2.0
 tests:
-  tests.ext.hello.functional_tests.GlobalHandlerTest: 2
-  tests.ext.hello.functional_tests.NamespacedHandlerTest: 2
+  tests.ext.coursebuilder-unit-lesson-copy.functional_tests.GlobalHandlerTest: 2
+  tests.ext.coursebuilder-unit-lesson-copy.functional_tests.NamespacedHandlerTest: 2

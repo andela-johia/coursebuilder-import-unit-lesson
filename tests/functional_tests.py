@@ -18,7 +18,7 @@ well as authenticated and unauthenticated users.
 """
 
 
-from modules.coursebuilder - unit - lesson import unit_lesson_copy
+from modules.coursebuilder - unit - lesson - copy import unit_lesson_copy
 from tests.functional import actions
 
 
