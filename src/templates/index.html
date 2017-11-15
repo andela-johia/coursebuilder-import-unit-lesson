@@ -2,19 +2,45 @@
 <html>
 
 <head>
-    <title>Course Builder Hello World module</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
-    <head>
+    <!--<script src="/static/polymer-1.2.0/webcomponentsjs/webcomponents-lite.js"></script>
+    {% if use_flattened_html_imports %}
+        <link rel="import" href="/static/html-imports/explorer-imports.html">
+    {% endif %}-->
+    <link rel="import" href="/modules/coursebuilder-unit-lesson-copy/_static/nav-bar.html">
+</head>
 
-        <body>
-            {% if user %}
-            <h1>Hello, {{ user.email() }}!</h1>
-            <p><a href="{{ logout_url }}">Sign out</a>.</p>
-            {% else %}
-            <h1>Hello world!</h1>
-            <p><a href="{{ login_url }}">Please sign in so we can greet you.</a></p>
-            {% endif %} {% if course %}
-            <p>Welcome to {{ course.title }}. {% endif %}
-        </body>
+<body>
+
+    <!-- Student Dashboard -->
+    <div class="row">
+        <h3> Copy Lesson Content</h3>
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="from-url" type="text" class="validate" value="" />
+                    <label for="from-url">From Lesson</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="to-url" type="text" class="validate" />
+                    <label for="to-url"> To Lesson</label>
+                </div>
+                <div class="col s12">
+                    <a id="import-button" class="waves-effect waves-light btn">Import Lesson</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="/modules/coursebuilder-unit-lesson-copy/_static/js/importLesson.js"></script>
+
+</body>
 
 </html>

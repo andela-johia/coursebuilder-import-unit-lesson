@@ -38,7 +38,7 @@ from controllers import utils
 from models import custom_modules
 
 from google.appengine.api import users
-
+import lessons
 
 _BASE_PATH = os.path.dirname(__file__)
 _TEMPLATES_PATH = os.path.join(_BASE_PATH, 'templates')
@@ -86,6 +86,7 @@ def register_module():
     ]
     namespaced_handlers = [
         (NamespacedHandler.URL, NamespacedHandler),
+        (lessons.CopyLessonRESTHandler.URL, lessons.CopyLessonRESTHandler)
     ]
     custom_module = custom_modules.Module(
         'CourseBuilder', 'Course Builder Import Unit Lesson Module', global_handlers,
