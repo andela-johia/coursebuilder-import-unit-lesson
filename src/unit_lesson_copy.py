@@ -83,10 +83,10 @@ def register_module():
 
     global_handlers = [
         (GlobalHandler.URL, GlobalHandler),
+        (lessons.CopyLessonRESTHandler.URL, lessons.CopyLessonRESTHandler)
     ]
     namespaced_handlers = [
-        (NamespacedHandler.URL, NamespacedHandler),
-        (lessons.CopyLessonRESTHandler.URL, lessons.CopyLessonRESTHandler)
+        (NamespacedHandler.URL, NamespacedHandler)
     ]
     custom_module = custom_modules.Module(
         'CourseBuilder', 'Course Builder Import Unit Lesson Module', global_handlers,
