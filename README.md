@@ -1,4 +1,4 @@
-# coursebuilder-import-unit-lesson
+# Coursebuilder Import Unit Lesson Module
 
 ## Introduction
 This module was designed for copying lessons from one unit or course to another. This is a standalone module and can be attached to any GCB application.
